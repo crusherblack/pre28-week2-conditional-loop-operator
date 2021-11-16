@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pink {
+  color: #db08a6;
+}
+
+div#show-result p {
+  font-size: 36px;
+}
+/* LEFT SIDE */
+.left-side {
+  padding: 40px 40px;
+  flex: 40%;
+}
+
+.left-side .header {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 34px;
+  overflow-y: hidden;
+}
+
+.left-side .form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left-side .form-group .label-input {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 8px;
+}
+
+.left-side .form-group .input {
+  margin-top: 10px;
+  background: #f1f1f1;
+  border: 2px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.left-side .form-group .input:focus {
+  outline: 0;
+}
+
+.left-side .btn-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-side .btn-group .btn-submit {
+  height: 55px;
+  width: 100%;
+  max-width: 250px;
+  padding: 0 8px;
+  background: #db08a6;
+  border-radius: 10px;
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 30px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.left-side .btn-submit:active {
+  background: #e922b7;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  background-image: url("./img/background.jpg");
+  background-size: 100%;
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.right-side .card {
+  background: #fefefe;
+  max-width: 750px;
+  width: 100%;
+  min-height: 500px;
+  padding: 10px 50px;
+  border-radius: 3px;
+}
+
+.right-side .card h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

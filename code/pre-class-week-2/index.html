@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <h1 class="header">Calculator App</h1>
+        <div class="form-group">
+          <label for="input-name" class="label-input">Operand 1</label>
+          <input
+            type="number"
+            value="0"
+            id="input-operand-1"
+            class="input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="input-email" class="label-input">Operand 2</label>
+          <input
+            type="number"
+            value="0"
+            id="input-operand-2"
+            class="input"
+            required
+          />
+        </div>
+        <div class="btn-group">
+          <button class="btn-submit" id="btn-addition" onclick="addition()">
+            Addition
+          </button>
+          <button class="btn-submit" id="btn-subtraction">Subtraction</button>
+          <button class="btn-submit" id="btn-multiplication">
+            Multiplication
+          </button>
+          <button class="btn-submit" id="btn-division">Division</button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="card">
+          <h1 class="text-center pink">Result</h1>
+          <div id="show-result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
