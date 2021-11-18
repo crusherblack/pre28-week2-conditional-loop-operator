@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* 
+keterangan box-shadow
+bagian kiri => penempatan bayangan
+ - shadow kanan
+ - shadow bawah
+ - outer shadow / soft
+ - outer shadow / bold
+bagian kanan => warna bayangan
+
+catatan: jika ingin membalikkan arah tambahkan minus
+*/
+
+.form-container > form {
+  width: 350px;
+  padding: 50px 30px 50px 30px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #000d6b;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.output-container {
+  margin-top: 30px;
+  width: 350px;
+  padding: 50px 30px 50px 30px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border-radius: 5px;
+}

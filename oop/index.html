@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form">
+        <h3>Aplikasi Raport</h3>
+        <div class="form-control">
+          <label>Student Name:</label>
+          <input
+            name="studentName"
+            type="text"
+            placeholder="Input Student Name"
+          />
+        </div>
+        <div class="form-control">
+          <label>Teacher Name:</label>
+          <input
+            name="teacherName"
+            type="text"
+            placeholder="Input Teacher Name"
+          />
+        </div>
+        <div class="form-control">
+          <label>Student Score:</label>
+          <input
+            name="studentScore"
+            type="number"
+            placeholder="Input Student Score"
+          />
+        </div>
+        <div class="form-control">
+          <button type="submit">Print Report</button>
+        </div>
+      </form>
+      <div class="output-container">
+        <h4>
+          Ouput:
+          <p id="output"></p>
+        </h4>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

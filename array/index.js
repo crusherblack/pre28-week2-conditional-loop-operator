@@ -90,3 +90,16 @@ colors.splice(findedColorIndex, 1);
 // ketika menggunakan slice jika tidak menambahkan parameter ke dua maka efeknya dia akan menghapus semua element dari array setelahnya
 
 console.log(colors);
+
+// arrray of array
+const carts = [
+  ["Laptop", 1_000_000],
+  ["Mobil", 2_000_000],
+  ["Payung", 1_000_000],
+  ["Topi", 500_000],
+];
+
+console.log(carts[1][0]); // Mobil
+console.log(carts[3][0]);
+
+console.table(carts);
