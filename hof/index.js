@@ -97,5 +97,13 @@ function deleteTodo(id) {
 
   todos = filteredTodo;
 
+  // const findedIndex = todos.findIndex((item) => item.id === id);
+  // todos.splice(findedIndex, 1);
+
   renderTodos();
 }
+
+// synchronous => menunggu task sebelumnya selesai baru lanjut
+// asynchronnous => dia jalankan semua task, task mana paling selesai itu yg ditampilkan outpnya
+
+// TUGAS: Untuk week 1 dan 2 pilih 1 saja dan terapkan HOF & Callback
