@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a286f03528.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="todo-container">
+      <h1 style="margin-bottom: 10px; text-align: center">
+        Todo <i class="fas fa-rocket"></i>
+      </h1>
+
+      <div class="input-container">
+        <input type="text" id="todo-input" />
+        <select id="todo-select">
+          <option value="Not Done">Not Done</option>
+          <option value="Done">Done</option>
+        </select>
+        <button onclick="addTodo()">Add Todo</button>
+      </div>
+      <div class="separator"></div>
+      <div class="list-container" id="list"></div>
+      <div id="count-id" style="margin-top: 10px"></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
