@@ -57,3 +57,15 @@ convertCars(cars, function (cars) {
 });
 
 console.log("dari global", testing);
+
+setTimeout(() => {
+  console.log("satu");
+
+  setTimeout(() => {
+    console.log("dua");
+
+    setTimeout(() => {
+      console.log("tiga");
+    }, 1000);
+  }, 1000);
+}, 1000);
