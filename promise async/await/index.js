@@ -6,6 +6,12 @@ const url = "https://pokeapi.co/api/v2/";
 async function getPokemonAndPostList() {
   // async/await hanya bisa digunakan untuk promise
   // promise => function
+  // ketika bermain dengan promise itu codenya async
+  // ketika kita ingin mendapatkan data dari promise kita harus handle menggunakan promise then / async await
+  // ketika menggunakan async await / promise then, promise yang sebelumnya async akan berubah menjadi seolah2 sync
+  // ketika menggunakan async await jangan lupa masing2 promise ditambahin await dan tampung dalam sebuah variable
+  // kalau gak ditampung datanya bakal tidak dapat, atau kalau lupa nambah await datanya gak muncul / gak dapat
+  // ketika ingin menjalankan promise secara async lagi dan tidak depen dengan code sebelumnya kamu bisa menggunakan promise all
 
   try {
     const rawResponse = await fetch(url + "pokemon?limit=100&offset=200");
@@ -125,26 +131,26 @@ getPokemonAndPostList();
 
 // showNumber();
 
-function sequence(input) {
-  return new Promise(function (resolve, reject) {
-    if (input <= 0) {
-      reject("angka tidak boleh nol atau dibawah nol");
-    } else {
-      let temp = [];
-      for (let index = 0; index < input; index++) {
-        temp.push(index + 1);
-      }
+// function sequence(input) {
+//   return new Promise(function (resolve, reject) {
+//     if (input <= 0) {
+//       reject("angka tidak boleh nol atau dibawah nol");
+//     } else {
+//       let temp = [];
+//       for (let index = 0; index < input; index++) {
+//         temp.push(index + 1);
+//       }
 
-      resolve(temp);
-    }
-  });
-}
+//       resolve(temp);
+//     }
+//   });
+// }
 
-(async function () {
-  try {
-    const result = await sequence(100);
-    console.log(result);
-  } catch (error) {
-    console.log(error);
-  }
-})();
+// (async function () {
+//   try {
+//     const result = await sequence(100);
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// })();
